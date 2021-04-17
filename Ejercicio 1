@@ -1,0 +1,7 @@
+direccion = input("Ingrese el correo electronico: ")
+def comprobar(direccion):
+    if direccion.find('@' and ('.com' or '.co')) >= 0: #Utiliza función .find() para rectificar si se usan los variables requeridas
+        print("Dirección de correo válido")
+    else:
+        print("Dirección de correo inválido")
+comprobar(direccion) #Devuelve si la dirección de correo es válida o no dependiendo si cumplen las condiciones anteriores.
