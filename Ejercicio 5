@@ -1,0 +1,31 @@
+digito):
+    cantidad = 0
+    while numero != 0:
+        ultDigito = numero % 10
+        if ultDigito == digito:
+            cantidad += 1
+        numero = numero // 10
+    return cantidad
+
+print("Digite un número y después digite que número desea ver cuantas veces se repite en este")
+num = int(input("Número: "))
+un_digito = int(input("Dígito: "))
+print("Frecuencia del dígito en el número:", frecuencia(num, un_digito))
+
+#Otra Solución
+aumentar = "si"
+def frecuency(numero, digito):
+    cantidad = 0
+    while numero != 0:
+        UltimoDigito = numero % 10
+        if UltimoDigito == digito:
+            cantidad += 1
+        numero = numero // 10
+    return cantidad
+while aumentar == "si":
+    num = int(input("Digite un número: "))
+    digito = int(input(" Digite un digito: "))
+    print("Frecuencia del dígito en el número: ", frecuency(num, digito))
+    aumentar = input("Desea ingresar más números? si o no: ")
+    if aumentar == "no":
+        print("El programa ha finalizado")
