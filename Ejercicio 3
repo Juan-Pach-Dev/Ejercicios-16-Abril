@@ -1,0 +1,16 @@
+def sumarnumeros(numero):
+    suma=0
+    while numero != 0:
+        digito = numero % 10
+        suma = suma + digito
+        numero = numero // 10
+    return suma
+
+acumulador = 0
+num = int(input("Ingrese un número menor a 10, si desea dejar de ingresar datos escriba el 0: "))
+while num != 0:
+    print("La suma total es: ", sumarnumeros(num))
+    acumulador = acumulador + num
+    num = int(input("Ingrese un número menor a 10, si desea dejar de ingresar datos escriba el 0: "))
+print("La sumatoria es: ", acumulador)
+print("Los dígitos son: ", sumarnumeros(acumulador))
