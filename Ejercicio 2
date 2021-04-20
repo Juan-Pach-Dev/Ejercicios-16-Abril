@@ -1,0 +1,21 @@
+def sumanumeros(numero):
+    suma = 0
+    while numero != 0:
+        digito = numero % 10
+        suma = suma + digito
+        numero = numero // 10
+    return suma
+num = int(input("Ingrese un número menor a 10, si desea dejar de ingresar datos escriba el 0: "))
+while num != 0:
+    print("Suma:", sumanumeros(num))
+    num = int(input("Ingrese un número menor a 10, si desea dejar de ingresar datos escriba el 0: "))
+    
+#Otra Solución
+def sumaDigitos(numero):
+    suma = 0
+    while numero != 0:
+       digito = numero % 10
+       suma = suma + digito
+       numero = numero // 10
+    return suma
+num = int(input("Digite números menores que 10 sin espacios entre sí, ni símbolos y estos serán sumados, para terminar digite 0: "))
